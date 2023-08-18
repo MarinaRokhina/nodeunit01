@@ -1,33 +1,33 @@
 
 setTimeout(() => {
   setImmediate(() => {
-    console.log('Был диван, 4');
+    console.log('Был диван,');
   });
   
   setTimeout(() => {
-    console.log('Выйди вон! 8');
+    console.log('Выйди вон!');
   }, 100);
   
   setImmediate(() => {
-    console.log('На диване 5');
+    console.log('На диване');
   });
   
   process.nextTick(() => {
-    console.log('Чемодан, 2');
+    console.log('Чемодан,');
   });
   
   setTimeout(() => {
-    console.log('Кто не верит – 7');
+    console.log('Кто не верит –');
   }, 10);
   
   setImmediate(() => {
-    console.log('Ехал слон. 6');
+    console.log('Ехал слон.');
   });
   
   process.nextTick(() => {
-    console.log('В чемодане 3');
+    console.log('В чемодане');
   });
   
-  console.log('Плыл по морю 1');
+  console.log('Плыл по морю');
 
 }, 100);
